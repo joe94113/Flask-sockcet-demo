@@ -6,11 +6,12 @@ var ws;
 
 function myFunction() {
 
-       ws = new WebSocket("ws://localhost:8000/echo");
+       ws = new WebSocket("ws://localhost:8000/echo"); //創立webSocket的連線
 
        ws.onopen = function() {
            // open websocket and display socket connected state
            document.getElementById("conn_status").style.display="flex";
+           // 連接成功就會把"cocket open"傳給後端
            ws.send("socket open");
        };
 
