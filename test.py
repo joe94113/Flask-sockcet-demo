@@ -25,7 +25,7 @@ def hello():
 
 @app.route('/echo_test', methods=['GET'])
 def echo_test():
-    return render_template('index.html')
+    return render_template('chat_index.html')
 
 
 # https://github.com/heroku-python/flask-sockets 套件官方說明
